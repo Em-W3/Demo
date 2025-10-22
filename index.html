@@ -1,4 +1,24 @@
 "html
 <meta name="api-key"
     content="your_api_key">
-    
+</head>
+<body>
+    <script>
+        const apiKeyMeta =
+            document.querySelector('Meta[name=apiKey"]')}
+        const apiKey = apiKeyMeta.content;
+
+        function fetchData() {
+       fetch('/lists/current/hardcover-fiction.json',{
+           headers:{
+               'X-API-Key': apiKey
+        }
+       })
+            .then(response => response.json())
+            .then(data=> console.log(data));
+        }
+        fetchData();
+    </script>
+</body>
+</html>
+"
