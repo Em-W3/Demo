@@ -28,3 +28,6 @@ console.log(apiKey);
         "
           }
         }])
+"javascript
+  const filteredData = data.filter(item =< Rank on the list item.Rank<10);
+"
